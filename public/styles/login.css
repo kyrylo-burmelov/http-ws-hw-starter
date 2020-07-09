@@ -1,0 +1,18 @@
+.username-input-container {
+  height: 39px;
+  width: 240px;
+}
+
+#username-input {
+  font-size: 16px;
+}
+
+#submit-button {
+  height: 39px;
+  font-size: 14px;
+  border: 1px solid var(--main-button-border-color);
+  background-color: var(--main-button-background-color);
+  text-transform: uppercase;
+  padding: 0 15px;
+  margin-left: 10px;
+}
