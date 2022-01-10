@@ -6,6 +6,7 @@ const appendRoomElement = ({ name, numberOfUsers }) => {
 	const nameElement = createElement({
 		tagName: 'div',
 		className: 'room-name',
+		attributes: { 'data-room-name': name },
 		innerElements: [name],
 	});
 
@@ -13,12 +14,14 @@ const appendRoomElement = ({ name, numberOfUsers }) => {
 	const connectedUsersElement = createElement({
 		tagName: 'div',
 		className: 'connected-users',
+		attributes: { 'data-room-name': name },
 		innerElements: [numberOfUsersString],
 	});
 
 	const joinButton = createElement({
 		tagName: 'button',
 		className: 'join-btn',
+		attributes: { 'data-room-name': name },
 		innerElements: ['Join'],
 	});
 
@@ -35,12 +38,12 @@ const appendRoomElement = ({ name, numberOfUsers }) => {
 };
 
 const updateNumberOfUsersInRoom = ({ name, numberOfUsers }) => {
-	const roomConnectedUsersElement = document.querySelector(`.room[data-room-name='${name}'] .connected-users`);
+	const roomConnectedUsersElement = document.querySelector(`.connected-users[data-room-name='${name}']`);
 	roomConnectedUsersElement.innerText = getNumberOfUsersString(numberOfUsers);
 };
 
 const getNumberOfUsersString = numberOfUsers => `${numberOfUsers} connected`;
 
-const deleteRoomElement = name => document.querySelector(`.room[data-room-name='${name}']`)?.remove();
+const removeRoomElement = name => document.querySelector(`.room[data-room-name='${name}']`)?.remove();
 
-export { appendRoomElement, updateNumberOfUsersInRoom, deleteRoomElement };
+export { appendRoomElement, updateNumberOfUsersInRoom, removeRoomElement };

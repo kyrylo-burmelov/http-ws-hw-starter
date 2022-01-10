@@ -1,5 +1,3 @@
-import { appendRoomElement, updateNumberOfUsersInRoom, deleteRoomElement } from './views/room.mjs';
-
 const username = sessionStorage.getItem('username');
 
 if (!username) {
