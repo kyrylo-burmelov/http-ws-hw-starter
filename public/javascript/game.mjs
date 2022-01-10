@@ -1,7 +1,9 @@
-const username = sessionStorage.getItem("username");
+import { appendRoomElement, updateNumberOfUsersInRoom, deleteRoomElement } from './views/room.mjs';
+
+const username = sessionStorage.getItem('username');
 
 if (!username) {
-  window.location.replace("/login");
+	window.location.replace('/login');
 }
 
-const socket = io("", { query: { username } });
+const socket = io('', { query: { username } });

@@ -1,0 +1,28 @@
+#rooms-wrapper {
+  display: flex
+}
+
+.room {
+  border-width: 3px;
+  border-color:dimgray;
+  border-style: solid;
+  margin: 10px 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+  min-width: 200px;
+}
+
+.room-name {
+  font-size: large;
+  font-weight: bold;
+}
+
+.join-btn {
+  background-color:darkgrey;
+  border: 3px solid dimgray;
+  padding: 5px 20px;
+}
