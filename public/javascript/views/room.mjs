@@ -14,7 +14,7 @@ const appendRoomElement = ({ name, numberOfUsers, onJoin = () => {} }) => {
 	const connectedUsersElement = createElement({
 		tagName: 'div',
 		className: 'connected-users',
-		attributes: { 'data-room-name': name },
+		attributes: { 'data-room-name': name, 'data-room-number-of-users': numberOfUsers },
 		innerElements: [numberOfUsersString],
 	});
 
@@ -42,6 +42,7 @@ const appendRoomElement = ({ name, numberOfUsers, onJoin = () => {} }) => {
 const updateNumberOfUsersInRoom = ({ name, numberOfUsers }) => {
 	const roomConnectedUsersElement = document.querySelector(`.connected-users[data-room-name='${name}']`);
 	roomConnectedUsersElement.innerText = getNumberOfUsersString(numberOfUsers);
+	roomConnectedUsersElement.dataset.roomNumberOfUsers = numberOfUsers;
 };
 
 const getNumberOfUsersString = numberOfUsers => `${numberOfUsers} connected`;
