@@ -1,7 +1,7 @@
 #quit-room-btn {
   padding: 10px 25px;
-  border: 3px solid dimgray;
-  background-color: darkgrey;
+  border: 1px solid var(--main-button-border-color);
+  background-color: var(--main-button-background-color);
   margin: 10px;
 }
 
@@ -16,7 +16,7 @@
 #game-container {
   width: 50vw;
   height: 50vh;
-  border: 3px solid dimgray;
+  border: 1px solid var(--main-button-border-color);
   margin: 25px;
   margin-left: 20vw;
   display: flex;
@@ -25,8 +25,8 @@
 }
 
 #ready-btn {
-  border: 3px solid dimgray;
-  background-color: darkgrey;
+  border: 1px solid var(--main-button-border-color);
+  background-color: var(--main-button-background-color);
   height: 100px;
   width: 200px;
   font-size: large;
@@ -58,7 +58,7 @@
 
 .user-progress-template {
   width: 100%;
-  border: 3px solid dimgray;
+  border: 1px solid var(--main-button-border-color);
   height: 25px;
 }
 
