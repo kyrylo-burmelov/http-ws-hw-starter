@@ -1,6 +1,6 @@
 import { createElement } from '../helpers/domHelper.mjs';
 
-const appendRoomElement = ({ name, numberOfUsers }) => {
+const appendRoomElement = ({ name, numberOfUsers, onJoin = () => {} }) => {
 	const roomsContainer = document.querySelector('#rooms-wrapper');
 
 	const nameElement = createElement({
@@ -33,6 +33,8 @@ const appendRoomElement = ({ name, numberOfUsers }) => {
 	});
 
 	roomsContainer.append(roomElement);
+
+	joinButton.addEventListener('click', onJoin);
 
 	return roomElement;
 };
