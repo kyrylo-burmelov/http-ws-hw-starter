@@ -1,0 +1,78 @@
+#quit-room-btn {
+  padding: 10px 25px;
+  border: 1px solid var(--main-button-border-color);
+  background-color: var(--main-button-background-color);
+  margin: 10px;
+}
+
+#room-name {
+  margin: 10px;
+}
+
+#game-page {
+  display: flex;
+}
+
+#game-container {
+  width: 50vw;
+  height: 50vh;
+  border: 1px solid var(--main-button-border-color);
+  margin: 25px;
+  margin-left: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#ready-btn {
+  border: 1px solid var(--main-button-border-color);
+  background-color: var(--main-button-background-color);
+  height: 100px;
+  width: 200px;
+  font-size: large;
+  font-weight: bold;
+}
+
+#timer {
+  font-size:xx-large;
+  font-weight: bold;
+}
+
+#text-container {
+  font-size: large;
+}
+
+#game-timer {
+  position: absolute;
+  bottom: 15px
+}
+
+.user-header {
+  display: flex;
+  margin: 5px 0px;
+}
+
+.user {
+  margin: 25px;
+  width: 100%
+}
+
+.username {
+  margin-left: 20px;
+}
+
+.user-progress-template {
+  width: 100%;
+  border: 1px solid var(--main-button-border-color);
+  height: 25px;
+}
+
+.user-progress {
+  height: 100%;
+  background-color:green;
+}
+
+.finished {
+  background-color:greenyellow !important;
+}

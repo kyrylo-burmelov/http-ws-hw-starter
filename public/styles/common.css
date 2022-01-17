@@ -48,3 +48,36 @@ input::placeholder {
   --input-placeholder-color: #888;
   --white: #fff;
 }
+
+.title {
+  margin: 25px
+}
+
+.modal {
+  width: 30vw;
+  max-height: 30vh;
+  box-shadow: 5px 10px 8px #888888;
+  position: absolute;
+  top: 10vh;
+  background-color: var(--white);
+  left: 35vw;
+  border: 1px solid var(--main-button-border-color);
+  border-radius: 10px;
+}
+
+.modal .inputs-wrapper {
+  display: flex;
+  justify-content: end;
+  margin: 10px
+}
+
+.modal button {
+  border: 1px solid var(--main-button-border-color);
+  background-color: var(--main-button-background-color);
+  padding: 0px 10px;
+  margin: 0px 5px;
+}
+
+.modal .body-wrapper {
+  margin: 25px
+}

@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/styles/reset.css">
   <link rel="stylesheet" href="/styles/common.css">
+  <link rel="stylesheet" href="/styles/rooms.css">
+  <link rel="stylesheet" href="/styles/game.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
     rel="stylesheet">
@@ -17,10 +19,28 @@
 <body>
   <div id="root">
     <div id="rooms-page" class="full-screen">
-      Rooms Page
+      <h1 class="title">Join Room Or Create New</h1>
+      <button id="add-room-btn">Create Room</button>
+      <div id="rooms-wrapper">
+      </div>
     </div>
     <div id="game-page" class="full-screen display-none">
-      Game Page
+      <div>
+        <h1 id="room-name">Room name</h1>
+        <button id="quit-room-btn">Back to Rooms</button>
+        <div id="users-wrapper"></div>
+      </div>
+      <div>
+        <div id="game-container">
+          <button id="ready-btn">READY</button>
+          <div id="timer" class="display-none">5</div>
+          <p id="text-container" class="display-none">Sample text</p>
+          <div id="game-timer" class="display-none">
+            <span id="game-timer-seconds">5</span>
+            <span> seconds left</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </body>
