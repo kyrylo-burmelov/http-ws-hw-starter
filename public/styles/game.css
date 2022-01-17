@@ -6,11 +6,7 @@
 }
 
 #room-name {
-  margin: 10px;
-}
-
-#game-page {
-  display: flex;
+  padding: 15px;
 }
 
 #game-container {
